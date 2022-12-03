@@ -2,18 +2,22 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import ticketLogo from '../assets/images/nftTicketLogo.png'
 import person from '../assets/images/person.png'
+import { useContext } from "react"
+import { NavContext } from "../contexts/NavContext"
 
 const Navbar = () => {
-    const [activeMenu, setActiveMenu] = useState('home')
+    const { activeMenu, handleActive } = useContext(NavContext)
 
-    const handleActive = (menu) => {
-        setActiveMenu(menu)
-    }
+    // const [activeMenu, setActiveMenu] = useState('home')
+
+    // const handleActive = (menu) => {
+    //     setActiveMenu(menu)
+    // }
     return (
         <nav className='bg-darkPurple px-8 md:px-12 lg:px-20 2xl:px-0'>
             <div className='flex justify-between items-center max-w-8xl m-auto h-20'>
                 <Link to='/'>
-                    <img src={ticketLogo} alt="Ticket Marketplace Logo" className='w-4/5 md:w-full' />
+                    <img src={ticketLogo} alt="Event Bazaar" className='w-4/5 md:w-full' />
                 </Link>
                 <ul className='hidden text-white lg:flex text-lg'>
                     <li className={`${activeMenu === 'home' && 'rounded-3xl bg-white text-blue font-semibold'} px-4 mx-4 cursor-pointer`} onClick={() => handleActive('home')}>

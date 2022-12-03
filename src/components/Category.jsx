@@ -43,12 +43,12 @@ const Category = () => {
                         ))}
                     </Swiper>
                 </div>
-                <div className="mb-6 flex items-center">
+                <div className="mb-6 flex justify-between items-center">
                     {categories.map((category, index) => (
                         <button
                             key={index}
                             value={category.value}
-                            className={`${category.value === eventCategory ? 'bg-blue' : ''} hidden md:block bg-inherit border-[1px] border-blue py-2 px-4 rounded-3xl font-semibold mr-12`}
+                            className={`${category.value === eventCategory ? 'bg-blue' : ''} hidden md:block bg-inherit border-[1px] border-blue py-2 px-4 rounded-3xl font-semibold`}
                             onClick={handleCategory}
                         >
                             {category.name}

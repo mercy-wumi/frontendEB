@@ -8,7 +8,7 @@ const Hero = () => {
         <div className='py-14 px-8 md:px-12 lg:p-20 bg-gradient-to-tl from-purple to-darkPurple'>
             <div className='flex max-w-8xl m-auto'>
                 <div className='text-white'>
-                    <h1 className='text-5xl md:text-6xl lg:text-8xl font-bold'>Create and <br />attend Events</h1>
+                    <h1 className='text-5xl md:text-6xl lg:text-8xl font-bold'>Create and <br />Attend Events</h1>
                     <p className='my-8 max-w-lg text-lg'>Create events, gift or sell event ticket, and lots more. Discover and connect with more people all over the world.</p>
                     <img src={divider} alt="divider" className='-ml-16' />
                     <Link to='/createEvent'>

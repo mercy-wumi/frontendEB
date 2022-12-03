@@ -36,7 +36,7 @@ const UserProfile = () => {
                     </div>
                 </div>
                 <div className='lg:flex'>
-                    <div className='flex-1 mr-8'>
+                    <div className='flex-1 lg:mr-8'>
                         <EventHeader title='Events' showSearch='true' />
                         <EventTable filteringEvent={filteringEvent} />
                     </div>
